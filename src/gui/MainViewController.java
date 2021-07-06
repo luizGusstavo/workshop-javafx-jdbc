@@ -65,7 +65,7 @@ public class MainViewController implements Initializable{
 			Node mainMenu = mainVBox.getChildren().get(0);//armazena o menu da tela principal
 			mainVBox.getChildren().clear(); //limpa todo o conteudo do vbox
 			mainVBox.getChildren().add(mainMenu); //adiciona o menu que tinha na tela principal
-			mainVBox.getChildren().addAll(newVBox.getChildren());//adiciona os filhos que tem na about
+			mainVBox.getChildren().addAll(newVBox.getChildren());//adiciona os filhos que tem no objeto passado como argumento
 		}
 		catch(IOException e) {
 			Alerts.showAlert("IO Exception", "Error loading view", e.getMessage(), AlertType.ERROR);
