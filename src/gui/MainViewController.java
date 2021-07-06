@@ -34,7 +34,7 @@ public class MainViewController implements Initializable{
 	
 	@FXML
 	public void onMenuItemDepartmentAction() {
-		System.out.println("onMenuItemDepartmentAction");
+		loadView("/gui/DepartmentList.fxml");
 	}
 	
 	@FXML
@@ -60,7 +60,7 @@ public class MainViewController implements Initializable{
 			VBox mainVBox = (VBox) ((ScrollPane) mainScene.getRoot()).getContent();
 			
 			/*Com o codigo a seguir, nós conseguimos manter o menu da tela principal e abrir uma outra tela na tela principal
-			 * com o menu armazenado, e os filhos da nova tela*/
+			 * com o menu armazenado, e os filhos da nova tela que foi aberta*/
 			
 			Node mainMenu = mainVBox.getChildren().get(0);//armazena o menu da tela principal
 			mainVBox.getChildren().clear(); //limpa todo o conteudo do vbox
